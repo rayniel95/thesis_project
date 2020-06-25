@@ -3,7 +3,7 @@ import * as AdminBroExpress from 'admin-bro-expressjs'
 import express from 'express'
 import {Database, Resource} from 'admin-bro-sequelizejs'
 import ExpressFormidable from 'express-formidable'
-import * as models from './models/models'
+import * as models from './models'
 
 
 AdminBro.registerAdapter({Database, Resource})
