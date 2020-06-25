@@ -3,11 +3,11 @@ import * as AdminBroExpress from 'admin-bro-expressjs'
 import express from 'express'
 import {Database, Resource} from 'admin-bro-sequelizejs'
 import ExpressFormidable from 'express-formidable'
-import * as models from './models'
+import * as models from '../dist/src/sequelize/models'
 
 
 AdminBro.registerAdapter({Database, Resource})
-
+//! i maybe go to another database
 
 const app = express()
 app.use(ExpressFormidable())
@@ -16,20 +16,20 @@ app.use(ExpressFormidable())
 // Routes definitions
 app.get('/', (req, res) => res.send('Hello World!'))
 
-// Route which returns last 100 users from the database
-app.get('/users', async (req, res) => {
-  const users = await models.HealthProffesional.findAll({limit: 10})
-  res.send(users)
-})
+// // Route which returns last 100 users from the database
+// app.get('/users', async (req, res) => {
+//   const users = await models.HealthProffesional.findAll({limit: 10})
+//   res.send(users)
+// })
 
-// Route which creates new user
-app.post('/users', async (req, res) => {
-    const user = await models.HealthProffesional.create({
-        name: 'ffefef',
-        speciality: 'dd'})
+// // Route which creates new user
+// app.post('/users', async (req, res) => {
+//     const user = await models.HealthProffesional.create({
+//         name: 'ffefef',
+//         speciality: 'dd'})
 
-    res.send(user)
-})
+//     res.send(user)
+// })
 
 
 const adminBro = new AdminBro({

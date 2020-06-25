@@ -1,4 +1,5 @@
-import { Model } from 'sequelize';
+import { Model, Sequelize } from 'sequelize';
+export declare const sequelize: Sequelize;
 export declare class Admin extends Model {
     id: number;
     name: string;

@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const sequelize_1 = require("sequelize");
-const sequelize = new sequelize_1.Sequelize({
+exports.sequelize = new sequelize_1.Sequelize({
     dialect: 'sqlite',
     storage: './database.sqlite'
 });
@@ -25,7 +25,7 @@ Admin.init({
     },
 }, {
     tableName: 'admins',
-    sequelize: sequelize
+    sequelize: exports.sequelize
 });
 HealthProffesional.init({
     id: {
@@ -42,7 +42,7 @@ HealthProffesional.init({
     }
 }, {
     tableName: 'proffesionals',
-    sequelize: sequelize
+    sequelize: exports.sequelize
 });
 Pacient.init({
     id: {
@@ -55,6 +55,6 @@ Pacient.init({
     },
 }, {
     tableName: 'pacients',
-    sequelize: sequelize
+    sequelize: exports.sequelize
 });
 //# sourceMappingURL=models.js.map
