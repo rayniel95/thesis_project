@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   Admin.init({
-    name: DataTypes.STRING
+    bebe: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Admin',
