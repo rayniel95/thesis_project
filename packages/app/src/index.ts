@@ -8,7 +8,7 @@ import * as models from '../dist/src/sequelize/models'
 
 AdminBro.registerAdapter({Database, Resource})
 //! i maybe go to another database
-
+//! error can be solved chainging of db, changing orm, but wichs error
 const app = express()
 app.use(ExpressFormidable())
 
