@@ -43,7 +43,6 @@ app.use(adminBro.options.rootPath, router)
 
 // Running the server() {
 async function run() {
-    // await models.sync()
     app.listen(8080, () => console.log(`Example app listening on port 8080!`))
 }
 
