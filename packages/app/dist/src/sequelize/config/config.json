@@ -1,14 +1,23 @@
 {
   "development": {
-    "storage": "../../../../database.sqlite",
-    "dialect": "sqlite"
+    "username": "ray",
+    "password": "123",
+    "database": "database_development",
+    "host": "localhost",
+    "dialect": "mysql"
   },
   "test": {
-    "storage": "../../../../database.sqlite",
-    "dialect": "sqlite"
+    "username": "root",
+    "password": "12345",
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
   },
   "production": {
-    "storage": "../../../../database.sqlite",
-    "dialect": "sqlite"
+    "username": "root",
+    "password": "12345",
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
   }
 }

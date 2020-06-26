@@ -42,6 +42,7 @@
     "mongodb": "^3.5.5",
     "mongoo": "^0.3.5",
     "mongoose": "^5.9.7",
+    "mysql2": "^2.1.0",
     "npx": "^10.2.2",
     "reflect-metadata": "^0.1.12",
     "sequelize": "^5.21.6",

@@ -16,21 +16,6 @@ app.use(ExpressFormidable())
 // Routes definitions
 app.get('/', (req, res) => res.send('Hello World!'))
 
-// // Route which returns last 100 users from the database
-// app.get('/users', async (req, res) => {
-//   const users = await models.HealthProffesional.findAll({limit: 10})
-//   res.send(users)
-// })
-
-// // Route which creates new user
-// app.post('/users', async (req, res) => {
-//     const user = await models.HealthProffesional.create({
-//         name: 'ffefef',
-//         speciality: 'dd'})
-
-//     res.send(user)
-// })
-
 
 const adminBro = new AdminBro({
     databases: [models],
